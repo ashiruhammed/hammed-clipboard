@@ -1,0 +1,323 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 8rem 0 0;
+  background: url(/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  font-size: 1rem;
+  font-weight: 400;
+}
+h2 {
+  padding: 0 2rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  line-height: 1.7rem;
+  margin-bottom: 3rem;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.mean,
+.hero,
+.desc,
+.heading,
+.second,
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.desc-one,
+.desc-two,
+.desc-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  width: 250px;
+  padding: 1rem;
+  border-radius: 30px;
+  color: white;
+  border: 0;
+}
+
+.mean img,
+.hero > img {
+  width: 300px;
+  margin-bottom: 3rem;
+}
+
+.second h3 {
+  margin-top: 10rem;
+}
+
+.btn-one {
+  background: hsl(171, 66%, 44%);
+}
+
+.btn-two {
+  background: hsl(233, 100%, 69%);
+}
+
+.desc img {
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  row-gap: 40px;
+}
+
+.icon img {
+  width: 100px;
+}
+
+.hero img + h3 {
+  margin-top: 50px;
+}
+
+h3,
+h2 {
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+.heading img {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+.last {
+  margin: 10rem 0;
+}
+
+.last h3 {
+  margin-bottom: 2rem;
+}
+
+.last p {
+  margin: 0;
+  padding: 0 25px;
+}
+.last .btn-one {
+  margin-top: 3rem;
+}
+
+ul {
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+.footer {
+  background: hsl(240, 75%, 98%);
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 2rem;
+  transition: all 0.5s ease;
+}
+
+.logo img:hover {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(92%) saturate(4592%)
+    hue-rotate(101deg) brightness(102%) contrast(105%);
+  cursor: pointer;
+}
+.btn-one:hover {
+  background: hsla(171, 66%, 44%, 0.8);
+  cursor: pointer;
+}
+
+.btn-two:hover {
+  background: hsla(233, 100%, 69%, 0.8);
+  cursor: pointer;
+}
+a:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.logo img {
+  margin-right: 2rem;
+}
+a {
+  text-decoration: none;
+  color: hsl(201, 11%, 66%);
+  transition: all 0.3s ease;
+}
+
+button {
+  transition: all 0.5s ease;
+}
+
+.det > img {
+  width: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+  }
+
+  .mean {
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+
+  .mean img {
+    width: 600px;
+    margin-bottom: 3rem;
+    margin-left: -5rem;
+  }
+  .min {
+    margin-left: 80px;
+    padding-right: 300px;
+    margin-top: -40px;
+  }
+
+  .min p {
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  .hero p {
+    margin-bottom: 5rem;
+    padding: 0 18rem;
+    text-align: center;
+  }
+
+  .last .btn-one {
+    margin-top: 0;
+  }
+
+  .last p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .det > img {
+    margin-top: -55px;
+  }
+  .btn {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .heading,
+  .second {
+    padding: 0 20rem;
+    text-align: center;
+  }
+
+  .desc-one,
+  .desc-two,
+  .desc-three {
+    padding: 0;
+  }
+
+  .icon {
+    flex-direction: row;
+    column-gap: 170px;
+    margin-top: 40px;
+  }
+  .icon img {
+    object-fit: contain;
+  }
+
+  .desc-one p,
+  .desc-two p,
+  .desc-three p {
+    padding: 0;
+    text-align: center;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .det {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    column-gap: 190px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .det img {
+    object-fit: contain;
+  }
+
+  ul {
+    column-count: 3;
+    column-gap: 40px;
+  }
+
+  .hero > img {
+    width: 600px;
+  }
+
+  .second p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h3,
+  h2,
+  p {
+    text-align: left;
+  }
+
+  .first p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .hero,
+  .btn {
+    align-items: center;
+    padding: 0;
+  }
+}
