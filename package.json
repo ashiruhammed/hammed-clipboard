@@ -2,7 +2,7 @@
   "name": "my-5th-challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "defualt": "index.js",
   "scripts": {
     "build": "parcel build index.html --dist-dir ./dist"
   },
